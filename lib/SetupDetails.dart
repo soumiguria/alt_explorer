@@ -27,7 +27,7 @@ class _SetupDetailsState extends State<SetupDetails> {
 
   Future<String> fetchSetupDetails(String userPrompt) async {
     String backgroundPrompt =
-        "Learn how to get started with setting up the application: $userPrompt";
+        "show for my idea that how to get started with setting up the application point wise and note that you will not show market research: $userPrompt";
 
     Uri uri = Uri.parse("https://api.openai.com/v1/chat/completions");
 

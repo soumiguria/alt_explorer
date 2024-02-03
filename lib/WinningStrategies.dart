@@ -30,7 +30,7 @@ class _WinningStrategiesState extends State<WinningStrategies> {
   Future<String> fetchWinningStrategies(String userPrompt) async {
     // Run a background prompt to generate winning strategies based on the user input
     String backgroundPrompt =
-        "Provide winning strategies for making the idea stand out in the market and its unique selling points: $userPrompt";
+        "Provide winning strategies for making the idea stand out in the market and its unique selling points try to explain pointwise: $userPrompt";
 
     Uri uri = Uri.parse("https://api.openai.com/v1/chat/completions");
 
