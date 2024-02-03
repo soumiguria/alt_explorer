@@ -70,24 +70,57 @@ class _ApiEndpointsState extends State<ApiEndpoints> {
       appBar: AppBar(
         title: Text('API Endpoints'),
       ),
-      body: SingleChildScrollView(
-        scrollDirection: Axis.vertical,
-        child: Container(
-          padding: EdgeInsets.all(16.0),
-          child: FutureBuilder<String>(
-            future: futureApiEndpoints,
-            builder: (context, snapshot) {
-              if (snapshot.connectionState == ConnectionState.waiting) {
-                return Center(child: CircularProgressIndicator());
-              } else if (snapshot.hasError) {
-                return Center(child: Text('Error: ${snapshot.error}'));
-              } else {
-                return Text(
-                  snapshot.data ?? 'No data available',
-                  style: TextStyle(fontSize: 16.0),
-                );
-              }
-            },
+      body: Container(
+        decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+              colors: [
+                const Color.fromARGB(255, 214, 116, 231),
+                Color.fromARGB(255, 230, 230, 142)
+              ],
+            ),
+          ),
+        child: SingleChildScrollView(
+          scrollDirection: Axis.vertical,
+          child: Card(
+
+            elevation: 5,
+                    margin: EdgeInsets.symmetric(vertical: 8.0),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10.0),
+                    ),
+            child: Container(
+              decoration: BoxDecoration(
+                        gradient: LinearGradient(
+                          begin: Alignment.topCenter,
+                          end: Alignment.bottomCenter,
+                          colors: [
+                            Colors.yellow,
+                            Colors.green.shade200,
+                            Colors.yellow
+                          ], // Adjust these colors as needed
+                        ),
+                        borderRadius: BorderRadius.circular(10.0),
+                      ),
+              child: Container(
+                child: FutureBuilder<String>(
+                  future: futureApiEndpoints,
+                  builder: (context, snapshot) {
+                    if (snapshot.connectionState == ConnectionState.waiting) {
+                      return Center(child: CircularProgressIndicator());
+                    } else if (snapshot.hasError) {
+                      return Center(child: Text('Error: ${snapshot.error}'));
+                    } else {
+                      return Text(
+                        snapshot.data ?? 'No data available',
+                        style: TextStyle(fontSize: 16.0),
+                      );
+                    }
+                  },
+                ),
+              ),
+            ),
           ),
         ),
       ),
