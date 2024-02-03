@@ -30,7 +30,7 @@ class _TechnologiesState extends State<Technologies> {
   Future<String> fetchTechnologies(String userPrompt) async {
     // Run a background prompt to generate information about technologies based on the user input
     String backgroundPrompt =
-        "Provide information about the technologies that can be used for building the project: $userPrompt";
+        "Provide information about the technologies that can be used for building the project ,explain each technology pointwise.: $userPrompt";
 
     Uri uri = Uri.parse("https://api.openai.com/v1/chat/completions");
 
