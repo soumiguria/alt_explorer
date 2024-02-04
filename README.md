@@ -46,14 +46,20 @@ The IdeaAnalyzer App is a powerful tool designed to assist users in evaluating t
 4. Start the server: `flutter run`
 5. Access the app at `Your physical device or at an emulator`
 
-###Screenshots
+### Screenshots
 
-![003c3419-ade9-426a-acc7-4a0794da2c5f](https://github.com/soumiguria/alt_explorer/assets/69115226/ace936f2-58d3-42a0-8509-6d8419ad59f9)
+<div style="display: flex; justify-content: space-between;">
+  <img src="https://github.com/soumiguria/alt_explorer/assets/69115226/ace936f2-58d3-42a0-8509-6d8419ad59f9" width="250" height="500">
+  <img src="https://github.com/soumiguria/alt_explorer/assets/69115226/36e0aeb3-344f-4d94-8334-cf2d9b3c3ed9" width="250" height="500">
+</div>
+<h4>Splash screen and Idea input page</h4>
 
-![85f3bea7-c8a1-4303-9ac3-06f35208c1d0](https://github.com/soumiguria/alt_explorer/assets/69115226/36e0aeb3-344f-4d94-8334-cf2d9b3c3ed9)
+<div style="display: flex; justify-content: space-between;">
+  <img src="https://github.com/soumiguria/alt_explorer/assets/69115226/d6a03c7a-eaca-4e9a-ae67-a6beda7c582d" width="250" height="500">
+  <img src="https://github.com/soumiguria/alt_explorer/assets/69115226/878d951c-fcfd-4abe-a7cf-412bc8883520" width="250" height="500">
+</div>
+<h4>Analysis page and Guidance page</h4>
 
-![25911257-d78d-4f8f-a7d5-3675183a8486](https://github.com/soumiguria/alt_explorer/assets/69115226/d6a03c7a-eaca-4e9a-ae67-a6beda7c582d)
 
-![a62573e1-e44d-4ad9-8c5e-7f5afc8dcb80](https://github.com/soumiguria/alt_explorer/assets/69115226/878d951c-fcfd-4abe-a7cf-412bc8883520)
 
 Happy ideating and building! 🚀
