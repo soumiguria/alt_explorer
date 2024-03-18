@@ -60,6 +60,11 @@ The IdeaAnalyzer App is a powerful tool designed to assist users in evaluating t
 </div>
 <h4>Analysis page and Guidance page</h4>
 
+## APK
+
+You can directly check the application from here
+https://drive.google.com/drive/folders/19EPyCDcBckUesNatEZbTOyKO9J9Cg1Rg?usp=sharing
+
 
 
 Happy ideating and building! 🚀
